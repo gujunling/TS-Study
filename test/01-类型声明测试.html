@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前端小记-TS类型声明测试</title>
+  </head>
+  <body>
+    <!-- <script src="../dist/01-类型申明/01-类型声明.js"></script> -->
+
+    <!-- 直接引用生成的js文件会报错，因为TS 文件设置了将其作为模块使用
+      （如果不设置作为模块使用，在编译的时候就会报错，因为TS默认情况下全局上下文不是window，而是DOM typings ），
+      所以需要按照下面的方式将其作为模块进行引用
+     -->
+    <script src="../dist/01-类型申明/01-类型声明.js" type="module"></script>
+  </body>
+</html>
