@@ -4,9 +4,9 @@
    *
    * TS 可以在属性前添加权限修饰符
    *
-   *        - public（默认值），可以在类、子类和对象中访问(修改)，即可以被任意访问(修改)
-   *        - protected ，受保护的，只可以在当前类及当前类的子类中访问(修改)
-   *        - private ，私有属性，只能在类的内部进行访问(修改),可以在类中添加方法来使得私有属性可以被外部访问（修改）
+   *     - public（默认值），可以在类、子类和对象中访问(修改)，即可以被任意访问(修改)
+   *     - protected ，受保护的，只可以在当前类及当前类的子类中访问(修改)
+   *     - private ，私有属性，只能在类的内部进行访问(修改),可以在类中添加方法来使得私有属性可以被外部访问（修改）
    *
    *
    */
@@ -43,17 +43,21 @@
     //   }
     // }
 
-    //方式二： TS 中设置 getter方法的方式
+    //方式二： TS 中设置 getter setter 方法的方式
     get name() {
+      console.log('设置 getter setter 方法的方式,调用 name 的 get 方法')
       return this._name
     }
     get age() {
+      console.log('设置 getter setter 方法的方式,调用 age 的 get 方法')
       return this._age
     }
     set name(value: string) {
+      console.log('设置 getter setter 方法的方式,调用name 的 set 方法')
       this._name = value
     }
     set age(value: number) {
+      console.log('设置 getter setter 方法的方式,调用 age 的 get 方法')
       if (value < 0 || value > 200) {
         return
       } else {
@@ -76,4 +80,7 @@
   pp.name = '哈哈哈哈'
   pp.age = 66
   console.log(pp)
+  console.log('---------------------------');
+  console.log(pp.name)
+  console.log(pp.age)
 })()

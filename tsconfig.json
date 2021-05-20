@@ -53,7 +53,7 @@
     "noEmitOnError": true,
 
     // 所有严格检查的总开关
-    "strict": true,
+    // "strict": true,
 
     // 用来设置编译后的文件是否使用严格模式，默认false
     "alwaysStrict": true,
@@ -65,6 +65,6 @@
     "noImplicitThis": true,
 
     // 严格的检查空值
-    "strictNullChecks": true
+    // "strictNullChecks": true
   }
 }

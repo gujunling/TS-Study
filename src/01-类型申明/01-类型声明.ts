@@ -10,10 +10,20 @@ a = 10
 a = 555
 // a = "jajja";  //此行代码会报错，因为 变量 a 的类型为 number ，不能赋值为字符串
 
+let a1: number = 10 // 十进制
+let a2: number = 0b1010 // 二进制
+let a3: number = 0o12 // 八进制
+let a4: number = 0xa // 十六进制
+
 let infinityNumber: number
 infinityNumber = Infinity
 // Infinity:无穷大
 // -Infinity  :负无穷大
+
+console.log(a1)
+console.log(a2)
+console.log(a3)
+console.log(a4)
 
 // ----------------------string-----------------------------------------
 
@@ -24,6 +34,25 @@ let b: string
 b = '哈哈哈'
 
 // b = 123; //此行代码会报错，因为 变量 b 的类型为 string ，不能赋值为 number 类型
+
+// ----------------------------string类型和number类型拼接使用-------------------------------------------------
+
+let str: string = '拥有你的我比国王富有'
+let num: number = 6666666666666666
+console.log(str + num)
+
+
+//-----------------------------undefined 和null---------------------------------------------------
+
+let und:undefined = undefined
+let nll:null = null
+
+console.log(und);
+console.log(nll);
+
+// 在非严格模式下，undefined 和 null 都可以作为其他类型的子类型，可以把 undefined 和 null 赋值给其他类型的变量
+// let num2:number = undefined
+
 
 // ----------------------------声明时赋值,TS会自动推断类型------------------------------------------------
 // 声明完变量就直接赋值

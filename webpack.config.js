@@ -68,8 +68,8 @@ module.exports = {
       template: './src/index.html'
     })
   ],
-  // 用来设置引用模块
+  // 用来设置引用模块，引用时可以不写扩展名
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.tsx','.js']
   }
 }

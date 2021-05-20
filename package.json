@@ -2,7 +2,7 @@
   "name": "TS-study",
   "version": "1.0.0",
   "description": "",
-  "main": ".prettierrc.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
